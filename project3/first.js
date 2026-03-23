@@ -13,9 +13,13 @@ const winPattern = [
     [3,4,5],
     [6,7,8]
 ];
-boxes.forEach((box) => {
+const resetGame = () => { //this function is being used to restart the game 
+    playerO = true;
+    enablegame();
+    gamewinner.classList.add("hide");
+}
+boxes.forEach((box) => { //this function is being used to play alternately
     box.addEventListener("click", () => {
-        console.log("box clicked");
         if(playerO === true){ //playerO turn
             playerO= false;
             box.innerText="O";
@@ -27,11 +31,23 @@ boxes.forEach((box) => {
         checkwinner();
     })
 })
-const showWinner = (winner) =>{
+const disablegame = () =>{ // this function is used to disable the buttons of game after one player has won
+    for(let box of boxes){
+        box.disabled = true;
+    }
+}
+const showWinner = (winner) =>{ // this function is used to display the winning message 
     gamewinner.innerText=`${winner} is winner `;
     gamewinner.classList.remove("hide");
+    disablegame();
 }
-const checkwinner = () => {
+const enablegame = () => { //this function is in used after hitting restart to empty the boxes and return to the initial player
+    for(let box of boxes){
+        box.disabled = false;
+        box.innerText = " ";
+    }
+}
+const checkwinner = () => { // this functions checks the winning conditions based on the patterns 
     for(pattern of winPattern){
         let pos1 = boxes[pattern[0]].innerText;
         let pos2 = boxes[pattern[1]].innerText;
@@ -43,3 +59,5 @@ const checkwinner = () => {
         }
     }
 }
+newgame.addEventListener("click", resetGame);
+resetbox.addEventListener("click", resetGame);

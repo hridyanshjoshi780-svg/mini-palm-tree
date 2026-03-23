@@ -29,9 +29,19 @@ main{
     border-radius:1rem;
     border:none;
     font-size:10vmin;
+    background-color:white;
+    color:black;
 }
 #gamereset{
     margin:1vmin;
     height:5vmin;
     width:20vmin;
+}
+#newgame{
+    margin:1vmin;
+    height:5vmin;
+    width:20vmin;
+}
+.hide{
+    display:none;
 }
