@@ -1,0 +1,37 @@
+body{
+    background-color:#D6FFF6;
+}
+main{
+    text-align: center;
+}
+.container{
+    background-color:#EEC0C6;
+    text-align: center;
+    height:70vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.gamelayout{
+    background-color:#726E75;
+    height:60vmin;
+    width:60vmin;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1vmin;
+    border-radius:2rem;
+}
+.gamebox{
+    height:18vh;
+    width:18vh;
+    border-radius:1rem;
+    border:none;
+    font-size:10vmin;
+}
+#gamereset{
+    margin:1vmin;
+    height:5vmin;
+    width:20vmin;
+}
