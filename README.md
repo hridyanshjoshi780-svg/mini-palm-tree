@@ -13,3 +13,4 @@ A basic ATM simulation program demonstrating core programming concepts.
 - Practice coding concepts
 - Build consistency
 - Create a strong development portfolio
+### i'll be using this repo for daily practice 
