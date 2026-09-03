@@ -1,3 +1,3 @@
-file = open("/home/hridyansh/Documents/Monday.md")
-print(file.read())
-file.close()
+import random
+randomnum = random.randint(0,100)
+hello = int(input("enter a number: "))
