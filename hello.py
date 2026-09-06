@@ -1,3 +1,7 @@
-import random
-randomnum = random.randint(0,100)
-hello = int(input("enter a number: "))
+# OOPs learning in python
+class Car:
+    def __init__(self, userbrand , usermodel):
+        self.brand = userbrand
+        self.model = usermodel
+my_car = Car("toyota", "corolla")
+print(my_car.brand, my_car.model)
