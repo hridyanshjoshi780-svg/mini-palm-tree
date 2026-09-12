@@ -12,5 +12,6 @@ print(my_new_car.model , my_new_car.brand)
 class Student:
     name = "hridyansh"
 
+
 s1 = Student()
 print(s1.name)
