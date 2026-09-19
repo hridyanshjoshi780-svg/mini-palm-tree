@@ -13,5 +13,6 @@ class Student:
     name = "hridyansh"
 
 
+
 s1 = Student()
 print(s1.name)
