@@ -10,10 +10,8 @@ my_new_car = Car("tata" , "safari")
 print(my_new_car.model , my_new_car.brand)
 
 class Student:
-    name = "hridyansh"
-
-
-
+    def __init__(self):
+        self.name = "hridyansh"
 
 s1 = Student()
 print(s1.name)
